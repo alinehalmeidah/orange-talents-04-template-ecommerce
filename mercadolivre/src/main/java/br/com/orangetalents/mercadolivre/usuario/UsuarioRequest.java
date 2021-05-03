@@ -9,7 +9,7 @@ public class UsuarioRequest {
 
     @NotBlank
     @Email
-    @UniqueValue(domainClass = Usuario.class, fieldName = "login")
+    @UniqueValue(domainClass = Usuario.class, fieldName = "login", message = "E-mail deve ser Único")
     private String login;
 
     @NotBlank
